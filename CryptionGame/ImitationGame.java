@@ -24,7 +24,7 @@ public class ImitationGame
              u = u.toUpperCase();
              if (u.equals("Y"))
                 {
-                 f.decryptRandom(Cipher.result);
+                 f.decryptRandom(s.getResult());
                 }
              else{
                  tru=false;

@@ -1,14 +1,15 @@
 public class Decipher 
 {
-    public static String decryptRandom(String input){
+    public String decryptRandom(String input){
+        Cipher sample = new Cipher();
         String result = ("");
         for(int i = 0; i < input.length(); i++)
         {
-            for(int c = 0; c < Cipher.decryption.length(); c++)
+            for(int c = 0; c < sample.getDecryption().length(); c++)
             {
-                if(input.charAt(i)==Cipher.decryption.charAt(c)) 
+                if(input.charAt(i)==sample.getDecryption().charAt(c)) 
                 {
-                    result+=Cipher.alphabet.charAt(c);
+                    result+=sample.getAlphabet().charAt(c);
                 }  
             }
         }
