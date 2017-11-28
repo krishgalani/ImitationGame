@@ -26,9 +26,7 @@ public class ImitationGame
                 {
                  f.decryptRandom(s.getResult());
                 }
-             else{
-                 tru=false;
-                 }
+             
         }
         else if(a.equals("D"))
         {
