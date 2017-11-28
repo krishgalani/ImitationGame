@@ -7,7 +7,8 @@ public class ImitationGame
        Cipher s = new Cipher();
        Scanner z = new Scanner(System.in);
        System.out.println("Welcome to my Encrypt/Decrypt function!\n What would you like to do today?"); 
-        while(true)
+       boolean tru = true;
+        while(tru)
     {
         System.out.print("Press E to encrypt, and D to decrypt, or S to stop");
         String a = z.nextLine();
@@ -23,21 +24,21 @@ public class ImitationGame
              u = u.toUpperCase();
              if (u.equals("Y"))
                 {
-                 f.decrypt();
+                 f.decryptRandom(Cipher.result);
                 }
              else{
-                 break;
+                 tru=false;
                  }
         }
         else if(a.equals("D"))
         {
              System.out.println("Please enter the word you would like to decrypt: ");
              String j = z.nextLine();
-             f.decrypt(j);
+             f.decryptRandom(j);
         }   
         else if(a.equals("S"))
         {
-            break;
+            tru=false;
         }
         else
         {
